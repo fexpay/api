@@ -73,7 +73,7 @@
 | 　coin       | true     | string   |        | 虚拟币名称                           |
 | 　coinRate   | true     | string   |        | 交易时币种市价                       |
 | 　coinAmount | true     | string   |        | 交易币的数量                         |
-| 　coinId     | true     | string   |        | 商家在OTC平台ID 11位,如: E0627000004 |
+| 　coinId     | true     | string   |        | OTC平台生成的订单ID 11位,如: E0627000004 |
 | 　code       | true     | string   |        | OTC平台处理码 (1000:成功)            |
 | 　msg        | true     | string   |        | OTC平台处理消息                      |
 | sign       | true     | string   |        | 加密字段签名                         |
