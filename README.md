@@ -140,7 +140,7 @@
 - 状态：有效
 - 接口描述：收款平台审核客户出金数据通过后，向OTC平台发出此请求。
 - 参数：
-  - idCard、realName 可空；如果非空，表示OTC平台做强校验：通过walletAddress查出实名用户，并与 idCard、realName对比，如不一致，返回1100。
+  - idCard、realName 必填，OTC平台通idCard、realName对比，如不一致，返回1100。
 - 返回值code：
   - 1000：表示成功；
   - 1100：表示idCard、realName与钱包地址拥有者实名信息不一致
@@ -168,8 +168,8 @@
 | 　returnUrl | true     | string   |        | 出金成功后，立即调用Url     |
 | 　orderId   | true     | string   |        | 商家平台出金订单ID          |
 | 　sendTime  | true     | string   |        | 出金时间                     |
-| 　idCard    | false    | string   |        | 身份证                       |
-| 　realName  | false    | string   |        | 真实姓名                     |
+| 　idCard    | true    | string   |        | 身份证                       |
+| 　realName  | true    | string   |        | 真实姓名                     |
 | 　coinId    | true     | string   |        | 1=BTC, 2=ETH, 3=UND          |
 | sign      | true     | string   |        | 加密内容数字签名             |
 
