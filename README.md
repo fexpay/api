@@ -143,7 +143,7 @@
   - idCard、realName 必填，OTC平台通idCard、realName对比，如不一致，返回1100。
 - 返回值code：
   - 1000：表示成功；
-  - 1100：表示idCard、realName与钱包地址拥有者实名信息不一致
+  - 1100：表示用户不存在
 
 
 #### 请求参数
