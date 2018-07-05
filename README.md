@@ -123,7 +123,7 @@
 | ------------- | -------- | -------- | ------ | -------------------------------- |
 | data          | true     | object   |        |                                  |
 | 　idCard        | true     | string   |        | 出金人身份证号                   |
-| 　walletAddress | true     | string   |        | 出金人在OTC平台 对应币种钱包地址 |
+| 　coinId | true     | string   |        | 指定币种   1=BTC, 2=ETH, 3=UND|
 | 　amount        | true     | string   |        | 出金指定币种对应 币的数量    |
 | 　appId         | true     | string   |        | 商家在OTC平台ID                  |
 | 　realName      | true     | string   |        | 出金人真实姓名                   |
