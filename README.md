@@ -253,3 +253,13 @@
 | 　msg        | true     | string   |        | OTC平台处理消息           |
 | sign       | true     | string   |        | 交互加密字段数据 签名     |
 
+#### 测试账号：
+入/出金Fexpay商家账号：
+appid: bpwallet01
+Secret Key: 83A6AEDE-3B5A-4D3E-B789-DC780421C1A1
+smac: C628C57D3F0FCB7652D9C5D64898DFFF
+
+入/出金Fexpay客户账号：
+bpwallet02@gmail.com
+登录密码：111111
+资金密码：222222
