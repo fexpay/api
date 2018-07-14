@@ -25,7 +25,6 @@
 | 参数名称  | 是否必须 | 数据类型 | 默认值 | 描述                     |
 | --------- | -------- | -------- | ------ | ------------------------ |
 | data      | true     | object   |        |                          |
-| 　appId     | true     | string   |        | 商家在OTC平台ID          |
 | 　orderId   | true     | string   |        | 商家平台入金订单 ID      |
 | 　returnUrl | true     | string   |        | 入金成功后，立即 调用Url |
 | 　notifyUrl | true     | string   |        | 入金成功后，定时 同步Url |
@@ -143,7 +142,6 @@
 | 　idCard        | true     | string   |        | 出金人身份证号                   |
 | 　coinId | true     | string   |        | 指定币种   1=BTC, 2=ETH, 3=UND|
 | 　amount        | true     | string   |        | 出金指定币种对应 币的数量    |
-| 　appId         | true     | string   |        | 商家在OTC平台ID                  |
 | 　realName      | true     | string   |        | 出金人真实姓名                   |
 | sign          | true     | string   |        | 加密内容签名                     |
 
@@ -199,7 +197,6 @@
 | 参数名称  | 是否必须 | 数据类型 | 默认值 | 描述                         |
 | --------- | -------- | -------- | ------ | ---------------------------- |
 | data      | true     | object   |        |                              |
-| 　appId     | true     | string   |        | 商家在OTC平台ID              |
 | 　amount    | true     | string   |        | 出金指定币种对应币的数量 |
 | 　notifyUrl | true     | string   |        | 出金成功后，定时同步URL     |
 | 　returnUrl | true     | string   |        | 出金成功后，立即调用Url     |
