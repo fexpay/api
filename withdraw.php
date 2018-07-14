@@ -105,7 +105,7 @@ $smac = 'C628C57D3F0FCB7652D9C5D64898DFFF';
 /**
  * 出金数据加密过程
  */
-// 接口参数次序如下
+// 接口参数必须按如下次序设置
 $data['realName'] = urlencode('实名02'); // 客户真实姓名
 $data['coinId'] = '1'; // 1=BTC, 2=ETH, 3=UND
 $data['amount'] = '0.48'; // 出金指定币种对应币的数量
