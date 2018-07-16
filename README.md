@@ -4,7 +4,7 @@
 #### 基本信息
 
 - 接口名称：客户入金
-- 接口地址：http://otc.coinauc.com/uc/transfer/checkOutAppid 
+- 接口地址：https://otc.coinauc.com/uc/transfer/checkOutAppid 
 - 请求方法：POST
 - 请求数据类型：X-WWW-FORM-URLENCODED
 - 响应类型：JSON
@@ -89,7 +89,7 @@
 #### 基本信息 
 
 - 接口名称：预出金验证请求 
-- 接口地址：http://otc.coinauc.com/transfer/checkWithdrawal 
+- 接口地址：https://otc.coinauc.com/transfer/checkWithdrawal 
 - 请求方法：POST
 - 请求数据类型：X-WWW-FORM-URLENCODED
 - 响应类型：JSON 
@@ -149,7 +149,7 @@
 #### 基本信息 
 
 - 接口名称：客户出金 
-- 接口地址：http://otc.coinauc.com/transfer/withdrawal 
+- 接口地址：https://otc.coinauc.com/transfer/withdrawal 
 - 请求方法：POST 
 - 请求数据类型：X-WWW-FORM-URLENCODED 
 - 响应类型：JSON 
