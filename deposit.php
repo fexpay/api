@@ -105,12 +105,11 @@ $smac = 'C628C57D3F0FCB7652D9C5D64898DFFF';
 /**
  * 入金数据加密过程
  */
-// 接口参数必须按如下次序设置
+// 接口参数次序如下
 $data['realName'] = urlencode('实名02'); // 客户真实姓名，可空
 $data['amount'] = '1000'; // 入金金额(美元)
 $data['orderId'] = '2018071318275278924'; // 商家平台入金订单ID
 $data['idCard'] = '2222222222'; // 2222222222 客户证件号码，可空
-$data['appId'] = 'bpwallet01'; // 商家在OTC平台ID
 $data['notifyUrl'] = 'https://www.domain.com/notify/callback'; // 入金成功后，定时 同步Url
 $data['returnUrl'] = 'https://www.domain.com/return/callback'; // 入金成功后，立即 调用Url
 $data['sendTime'] = '2018-07-13 18:27:52'; // 入金时间

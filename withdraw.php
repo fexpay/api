@@ -105,15 +105,15 @@ $smac = 'C628C57D3F0FCB7652D9C5D64898DFFF';
 /**
  * 出金数据加密过程
  */
-// 接口参数必须按如下次序设置
+// 接口参数次序如下
 $data['realName'] = urlencode('实名02'); // 客户真实姓名
 $data['coinId'] = '1'; // 1=BTC, 2=ETH, 3=UND
 $data['amount'] = '0.48'; // 出金指定币种对应币的数量
-$data['orderId'] = '2018071318275278925'; // 商家平台入金订单ID
+$data['orderId'] = '2018071318275278925'; // 商家平台出金订单ID
 $data['idCard'] = '2222222222'; // 客户证件号码
-$data['notifyUrl'] = 'https://www.domain.com/notify/callback'; // 出金成功后，立即调用Url
-$data['returnUrl'] = 'https://www.domain.com/return/callback'; // 出金成功后，定时同步URL
-$data['sendTime'] = '2018-07-13 18:27:52'; // 入金时间
+$data['notifyUrl'] = 'https://www.domain.com/notify/withdraw/callback'; // 出金成功后，立即调用Url
+$data['returnUrl'] = 'https://www.domain.com/return/withdraw/callback'; // 出金成功后，定时同步URL
+$data['sendTime'] = '2018-07-13 18:27:52'; // 出金时间
 
 $ciphertext['data'] = $data;
 $ciphertext['sign'] = strtoupper(md5(stripslashes(json_encode($data)) . $smac)); // 签名
