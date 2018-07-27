@@ -62,7 +62,10 @@ ciphertext = OrderedDict()
 ciphertext["data"] = data
 ciphertext['sign'] = sign.upper()
 
+#加密入金数据
 str_en = des_encrypt(json.dumps(ciphertext, separators=(',',':'))).upper()
 print(str_en)
+
+#解密入金数据
 str_de = des_descrypt(str_en)
 print(str_de)
