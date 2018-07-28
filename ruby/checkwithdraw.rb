@@ -9,7 +9,7 @@ class Des
 	ALG = 'DES-CBC'
 
 	def encode(key, iv, str)
-		des = OpenSSL::Cipher::Cipher.new(ALG)
+		des = OpenSSL::Cipher.new(ALG)
 		des.key = key
 		des.iv = iv
 		des.encrypt
@@ -23,7 +23,7 @@ class Des
 
 	def decode(key, iv, str)
 		str = [str].pack('H*')
-		des = OpenSSL::Cipher::Cipher.new(ALG)
+		des = OpenSSL::Cipher.new(ALG)
 		des.key = key
 		des.iv = iv
 		des.decrypt
