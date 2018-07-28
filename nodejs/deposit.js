@@ -11,7 +11,6 @@ var data = {
 	'amount' : '1000',
 	'orderId' : '2018071318275278924',
 	'idCard' : '2222222222',
-	'appId' : 'bpwallet01',
 	'notifyUrl' : 'https://www.domain.com/notify/callback',
 	'returnUrl' : 'https://www.domain.com/return/callback',
 	'sendTime' : '2018-07-13 18:27:52'
