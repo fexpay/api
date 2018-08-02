@@ -70,7 +70,7 @@ public class TryDemo {
 	public static void withdraw() throws Exception {
 		JSONObject json = new JSONObject();
 		//真实姓名
-		json.put("realName", "实名02");
+		json.put("realName", json.put("realName", URLEncoder.encode("实名02", "UTF-8")););
 		//证件号码
 		json.put("idCard", "2222222222");
 		//币种id：1=BTC, 2=ETH, 3=UND
