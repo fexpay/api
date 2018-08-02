@@ -25,7 +25,7 @@ public class TryDemo {
 		//入金时间
 		json.put("sendTime", "2017-08-30 22:05:31");
 		//真实姓名
-		json.put("realName", "实名02");
+		json.put("realName", URLEncoder.encode("实名02", "UTF-8"));
 		//证件号码
 		json.put("idCard", "2222222222");
 		//入金成功后，定时 同步Url
