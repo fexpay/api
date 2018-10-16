@@ -267,7 +267,4 @@
 #### 测试环境
 - 接口地址：https://otc.coinauc.com/transfer/leanwork/pay
 
-#### 生产环境
-- 接口地址：https://www.fexpay.co/transfer/leanwork/pay
-
 ##### 接入文档参见：《Leanwork租户自接支付通道接口》
