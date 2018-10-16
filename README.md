@@ -25,15 +25,29 @@
 | 参数名称  | 是否必须 | 数据类型 | 默认值 | 描述                     |
 | --------- | -------- | -------- | ------ | ------------------------ |
 | data      | true     | object   |        |                          |
-| 　orderId   | true     | string   |        | 商家平台入金订单 ID      |
-| 　returnUrl | true     | string   |        | 入金成功后，立即 调用Url |
-| 　notifyUrl | true     | string   |        | 入金成功后，定时 同步Url |
-| 　amount    | true     | string   |        | 入金金额(美元)           |
-| 　sendTime  | true     | string   |        | 入金时间                 |
-| 　idCard   | false | string |      | 身份证号         |
 | 　realName | false | string |      | 真实姓名         |
+| 　amount    | true     | string   |        | 入金金额(美元)           |
+| 　orderId   | true     | string   |        | 商家平台入金订单 ID      |
+| 　idCard   | false | string |      | 身份证号         |
+| 　notifyUrl | true     | string   |        | 入金成功后，定时 同步Url |
+| 　returnUrl | true     | string   |        | 入金成功后，立即 调用Url |
+| 　sendTime  | true     | string   |        | 入金时间                 |
 | sign     | true  | string |      | 加密内容数字签名 |
 
+例：
+{
+	"data": {
+		"realName": "实名02",
+		"amount": "5.25",
+		"orderId": "2018071318275278924",
+		"idCard": "2222222222",
+		"notifyUrl": "https://www.domain.com/notify/callback",
+		"returnUrl": "https://www.domain.com/return/callback",
+		"sendTime": "2018-07-13 18:27:52"
+	},
+	"sign": "2AEB1CB86A15B970BA5BAB93E0E9D527"
+}
+注：JSON数据需按以上顺序生成
 
 ### 2. 客户入金数据定时上传 
 
@@ -72,10 +86,27 @@
 | 　coin       | true     | string   |        | 虚拟币名称                           |
 | 　coinRate   | true     | string   |        | 交易时币种市价                       |
 | 　coinAmount | true     | string   |        | 交易币的数量                         |
-| 　coinId     | true     | string   |        | OTC平台生成的订单ID 11位,如: E0627000004 |
+| 　coinId     | true     | string   |        | OTC平台生成的订单ID 11位,如: E1012181377813 |
 | 　code       | true     | string   |        | OTC平台处理码 (1000:成功)            |
 | 　msg        | true     | string   |        | OTC平台处理消息                      |
 | sign       | true     | string   |        | 加密字段签名                         |
+
+例：
+{
+	"data": {
+		"msg": "Success",
+		"coinId": "E1012181377813",
+		"amount": "1000.00000000",
+		"coinAmount": "1000.00000000",
+		"code": "1000",
+		"orderId": "NOxxxxxxxxxxx",
+		"coinRate": "1.00000000",
+		"sendTime": "2018-10-12 15:35:27",
+		"coin": "UND"
+	},
+	"sign": "AD50385C9129D896A5B29DE480B323BA"
+}
+注：JSON数据需按以上顺序生成
 
 #### 响应参数 
 
@@ -144,6 +175,18 @@
 | 　amount        | true     | string   |        | 出金指定币种对应 币的数量    |
 | 　realName      | true     | string   |        | 出金人真实姓名                   |
 | sign          | true     | string   |        | 加密内容签名                     |
+
+例：
+{
+	"data": {
+		"idCard": "xxxxxx",
+		"coinId": "3",
+		"amount": "41271.6",
+		"realName": "default"
+	},
+	"sign": "3BE94D74A6039E61D93E653250218192"
+}
+注：JSON数据需按以上顺序生成
 
 ### 4. 客户出金 
 #### 基本信息 
