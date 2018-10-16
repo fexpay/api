@@ -262,3 +262,12 @@
 - 资金密码：222222
 - 真实姓名: 实名02
 - 身份证号: 2222222222
+
+### Leanwork接入
+#### 测试环境
+- 接口地址：https://otc.coinauc.com/transfer/leanwork/pay
+
+#### 生产环境
+- 接口地址：https://www.fexpay.co/transfer/leanwork/pay
+
+##### 接入文档参见：《Leanwork租户自接支付通道接口》
