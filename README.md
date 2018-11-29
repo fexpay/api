@@ -4,7 +4,7 @@
 #### 基本信息
 
 - 接口名称：客户入金
-- 接口地址：https://otc.coinauc.com/uc/transfer/checkOutAppid 
+- 接口地址：http://fexpay.coinauc.com/uc/transfer/checkOutAppid 
 - 请求方法：POST
 - 请求数据类型：X-WWW-FORM-URLENCODED
 - 响应类型：JSON
@@ -124,7 +124,7 @@
 #### 基本信息 
 
 - 接口名称：预出金验证请求 
-- 接口地址：https://otc.coinauc.com/transfer/checkWithdrawal 
+- 接口地址：http://fexpay.coinauc.com/transfer/checkWithdrawal 
 - 请求方法：POST
 - 请求数据类型：X-WWW-FORM-URLENCODED
 - 响应类型：JSON 
@@ -198,7 +198,7 @@
 #### 基本信息 
 
 - 接口名称：客户出金 
-- 接口地址：https://otc.coinauc.com/transfer/withdrawal 
+- 接口地址：http://fexpay.coinauc.com/transfer/withdrawal 
 - 请求方法：POST 
 - 请求数据类型：X-WWW-FORM-URLENCODED 
 - 响应类型：JSON 
@@ -314,6 +314,6 @@
 
 ### Leanwork接入
 #### 测试环境
-- 接口地址：https://otc.coinauc.com/transfer/leanwork/pay
+- 接口地址：http://fexpay.coinauc.com/transfer/leanwork/pay
 
 ##### 接入文档参见：《Leanwork租户自接支付通道接口》
